@@ -65,6 +65,10 @@ const event = JSON.parse(rawBody.toString('utf8'));
 npm test
 ```
 
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the setup and pull request guidelines.
+
+Report security issues privately as described in [SECURITY.md](SECURITY.md).
+
 ## License
 
 MIT
