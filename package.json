@@ -1,5 +1,5 @@
 {
-  "name": "@dotmarn/mailcheckr",
+  "name": "@deedotman/mailcheckr",
   "version": "0.1.0",
   "description": "Node.js client for the MailCheckr email verification API",
   "license": "MIT",

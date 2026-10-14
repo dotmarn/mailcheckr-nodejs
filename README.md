@@ -5,7 +5,7 @@ Server-side Node.js client for the [MailCheckr API](https://mailcheckr.app/docs)
 ## Install
 
 ```sh
-npm install @dotmarn/mailcheckr
+npm install @deedotman/mailcheckr
 ```
 
 Set `MAILCHECKR_API_KEY` on your server. Keep the API key out of browser code.
@@ -13,7 +13,7 @@ Set `MAILCHECKR_API_KEY` on your server. Keep the API key out of browser code.
 ## Verify an email
 
 ```js
-import { MailCheckrClient } from '@dotmarn/mailcheckr';
+import { MailCheckrClient } from '@deedotman/mailcheckr';
 
 const client = new MailCheckrClient();
 const result = await client.verify('person@example.com', 'verify-user-123');
@@ -36,7 +36,7 @@ You can configure the client with `{ apiKey, baseUrl, timeout, fetch }`. The def
 CommonJS works too:
 
 ```js
-const { MailCheckrClient } = require('@dotmarn/mailcheckr');
+const { MailCheckrClient } = require('@deedotman/mailcheckr');
 ```
 
 ## Verify webhooks
@@ -44,7 +44,7 @@ const { MailCheckrClient } = require('@dotmarn/mailcheckr');
 Use the exact raw request body, before JSON parsing. The verifier checks the HMAC SHA-256 signature and rejects timestamps outside the default five-minute window.
 
 ```js
-import { WebhookVerifier } from '@dotmarn/mailcheckr';
+import { WebhookVerifier } from '@deedotman/mailcheckr';
 
 const verifier = new WebhookVerifier(process.env.MAILCHECKR_WEBHOOK_SECRET);
 const rawBody = Buffer.from(await request.arrayBuffer());
