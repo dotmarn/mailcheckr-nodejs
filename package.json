@@ -1,7 +1,16 @@
 {
   "name": "@deedotman/mailcheckr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node.js client for the MailCheckr email verification API",
+  "keywords": [
+    "mailcheckr",
+    "email-verification",
+    "email-validation",
+    "email-deliverability",
+    "webhooks",
+    "sdk",
+    "typescript"
+  ],
   "license": "MIT",
   "repository": { "type": "git", "url": "https://github.com/dotmarn/mailcheckr-nodejs.git" },
   "engines": { "node": ">=18" },
